@@ -2,10 +2,8 @@ void main(){
   final mapA = <String, dynamic>{'nome': 'Eduardo', 'sobrenome': 'Leal'};
   mapA.addAll({'phone': '4199999-9999'});
   print(mapA);
-  final mapB = <String, dynamic>{
-    'address': {'street': 'Rua das amoras'}
-  };
-  print(mapB);
-  mapA.addEntries(mapB.entries);
+  mapA.remove('sobrenome');
+  print(mapA);
+  mapA.removeWhere((key, value) => value == '4199999-9999');
   print(mapA);
 }
