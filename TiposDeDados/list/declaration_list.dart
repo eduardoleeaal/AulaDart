@@ -1,3 +1,6 @@
+// ignore_for_file: unused_local_variable
+
+
 void main(){
   List dynamicList = [1, 'A', true, {'key':'value'}];
   List<int> integerList = [1, 2, 3, 4, 5];
